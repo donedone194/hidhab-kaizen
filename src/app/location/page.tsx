@@ -140,28 +140,12 @@ export default function LocationPage() {
                     className="w-full h-full"
                   />
                 ) : (
-                  <div className="relative w-full h-full flex flex-col items-center justify-center bg-navy-950 text-white p-6 text-center">
+                  <div className="relative w-full h-full bg-navy-950 flex items-center justify-center overflow-hidden">
                     <img
                       src="/location.jpg"
-                      alt="محل هضاب كايزن سطيف"
-                      className="absolute inset-0 w-full h-full object-cover"
-                      onError={(e) => {
-                        e.currentTarget.style.display = "none";
-                      }}
+                      alt={locale === "ar" ? "محل هضاب كايزن سطيف - حي قاوة" : "Local Hidhab Kaizen Sétif - Cité Gaoua"}
+                      className="w-full h-full object-cover"
                     />
-                    <div className="relative z-10 space-y-2 max-w-sm">
-                      <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-orange-400 mx-auto">
-                        <Camera className="w-6 h-6" />
-                      </div>
-                      <h4 className="font-bold text-base text-white">
-                        {locale === "ar" ? "صورة واجهة محل هضاب كايزن" : "Façade du local Hidhab Kaizen"}
-                      </h4>
-                      <p className="text-xs text-sand-300 leading-relaxed">
-                        {locale === "ar"
-                          ? "يمكنك وضع صورة محلك باسم location.jpg داخل مجلد public لتظهر هنا تلقائياً لزبائنك."
-                          : "Placez la photo de votre local sous le nom location.jpg dans le dossier public pour l'afficher ici."}
-                      </p>
-                    </div>
                   </div>
                 )}
               </div>
