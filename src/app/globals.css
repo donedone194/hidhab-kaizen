@@ -1,26 +1,122 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand Colors */
+  --navy-950: #050E1A;
+  --navy-900: #0B1F3A;
+  --navy-850: #0E2647;
+  --navy-800: #13325B;
+  --navy-700: #1D457B;
+  
+  --orange-600: #DE6D0C;
+  --orange-500: #F5821F;
+  --orange-400: #FB993D;
+  --orange-100: #FFF3E6;
+  --orange-50:  #FFF9F2;
+
+  --sand-50:  #F8F7F4;
+  --sand-100: #F2F0E8;
+  --sand-200: #E6E3D8;
+  --sand-300: #D4D0C2;
+
+  --charcoal-900: #111827;
+  --charcoal-800: #1F2937;
+  --charcoal-600: #4B5563;
+  --charcoal-400: #9CA3AF;
+
+  --background: var(--sand-50);
+  --foreground: var(--charcoal-900);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  --color-navy-950: var(--navy-950);
+  --color-navy-900: var(--navy-900);
+  --color-navy-850: var(--navy-850);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-orange-600: var(--orange-600);
+  --color-orange-500: var(--orange-500);
+  --color-orange-400: var(--orange-400);
+  --color-orange-100: var(--orange-100);
+  --color-orange-50: var(--orange-50);
+
+  --color-sand-50: var(--sand-50);
+  --color-sand-100: var(--sand-100);
+  --color-sand-200: var(--sand-200);
+  --color-sand-300: var(--sand-300);
+
+  --color-charcoal-900: var(--charcoal-900);
+  --color-charcoal-800: var(--charcoal-800);
+  --color-charcoal-600: var(--charcoal-600);
+  --color-charcoal-400: var(--charcoal-400);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--sand-50);
+  color: var(--charcoal-900);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom Typography mapping */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), var(--font-arabic-body), sans-serif;
+  letter-spacing: -0.02em;
+}
+
+body, input, textarea, select, button {
+  font-family: var(--font-arabic-body), var(--font-latin-body), sans-serif;
+}
+
+/* RTL Arrow Flipping Utility */
+[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+/* Smooth Focus & Form States per Modern Web Guidance */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #F5821F !important;
+  box-shadow: 0 0 0 3px rgba(245, 130, 31, 0.18) !important;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F2F0E8;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4C0B2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0B1F3A;
+}
+
+/* Print styles for Algerian Courier Delivery Slips (بيان التوصيل) */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  header, footer, nav, .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .delivery-slip-sheet {
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+    margin: 0 !important;
+    padding: 10mm !important;
+    page-break-inside: avoid;
+    width: 100% !important;
+  }
 }
