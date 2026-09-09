@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
 import { getProducts } from "@/lib/data-service";
+import { getSiteUrl } from "@/lib/site-url";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hidhabkaizen.dz";
+  const baseUrl = getSiteUrl();
   const now = new Date();
 
   // Core static storefront routes

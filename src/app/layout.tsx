@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cairo, IBM_Plex_Sans_Arabic, Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { getSiteUrl } from "@/lib/site-url";
 
 const cairo = Cairo({
   subsets: ["arabic", "latin"],
@@ -24,7 +25,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hidhabkaizen.dz";
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
