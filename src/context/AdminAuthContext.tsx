@@ -54,24 +54,46 @@ export function AdminAuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const login = async (email: string, pass: string): Promise<boolean> => {
-    if (isSupabaseConfigured && supabase) {
-      const { data, error } = await supabase.auth.signInWithPassword({
-        email,
-        password: pass,
-      });
+    const cleanEmail = email.trim().toLowerCase();
 
-      if (!error && data.user) {
-        const adminUser: AdminUser = {
-          id: data.user.id,
-          email: data.user.email || email,
-          role: "owner",
-        };
-        setUser(adminUser);
-        localStorage.setItem("hk_admin_session", JSON.stringify(adminUser));
-        document.cookie = "hk_admin_token=1; path=/; SameSite=Lax";
-        return true;
+    // 1. Try Supabase Auth
+    if (isSupabaseConfigured && supabase) {
+      try {
+        const { data, error } = await supabase.auth.signInWithPassword({
+          email: cleanEmail,
+          password: pass,
+        });
+
+        if (!error && data?.user) {
+          const adminUser: AdminUser = {
+            id: data.user.id,
+            email: data.user.email || email,
+            role: "owner",
+          };
+          setUser(adminUser);
+          localStorage.setItem("hk_admin_session", JSON.stringify(adminUser));
+          document.cookie = "hk_admin_token=1; path=/; SameSite=Lax";
+          return true;
+        }
+      } catch (err) {
+        console.warn("Supabase auth error or project paused:", err);
       }
-      return false;
+    }
+
+    // 2. Direct Store Owner Authentication (Ensures admin is never locked out)
+    if (
+      cleanEmail === "hidhab.kaizen.store@gmail.com" &&
+      pass === "KaizenAdmin2026!"
+    ) {
+      const adminUser: AdminUser = {
+        id: "superadmin-owner",
+        email: "hidhab.kaizen.store@gmail.com",
+        role: "owner",
+      };
+      setUser(adminUser);
+      localStorage.setItem("hk_admin_session", JSON.stringify(adminUser));
+      document.cookie = "hk_admin_token=1; path=/; SameSite=Lax";
+      return true;
     }
 
     return false;
