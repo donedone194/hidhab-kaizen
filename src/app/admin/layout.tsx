@@ -89,7 +89,7 @@ function AdminLayoutContent({ children }: { children: React.ReactNode }) {
     },
     {
       href: "/admin/delivery-pricing",
-      label: locale === "ar" ? "أسعار التوصيل (58 ولاية)" : "Tarifs Livraison (58)",
+      label: locale === "ar" ? "أسعار التوصيل (69 ولاية)" : "Tarifs Livraison (69)",
       icon: Truck,
       badge: null,
     },

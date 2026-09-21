@@ -72,7 +72,7 @@ export default function LocationPage() {
                   <span>{locale === "ar" ? "تغطية لوجستية كاملة" : "Couverture Logistique"}</span>
                 </div>
                 <h4 className="text-xl font-black">
-                  {locale === "ar" ? "شحن يومي نحو 58 ولاية" : "Expéditions quotidiennes 58 wilayas"}
+                  {locale === "ar" ? "شحن يومي نحو 69 ولاية" : "Expéditions quotidiennes 69 wilayas"}
                 </h4>
                 <p className="text-xs text-sand-300 leading-relaxed">
                   {locale === "ar"

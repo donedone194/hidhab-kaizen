@@ -188,7 +188,7 @@ export default function AdminOrdersPage() {
             onChange={(e) => setWilayaFilter(e.target.value)}
             className="w-full px-3 py-2.5 rounded-xl border border-sand-300 text-xs bg-white text-navy-950"
           >
-            <option value="all">{locale === "ar" ? "كل الولايات (58 ولاية)" : "Toutes les wilayas"}</option>
+            <option value="all">{locale === "ar" ? "كل الولايات (69 ولاية)" : "Toutes les wilayas (69)"}</option>
             {ALGERIA_WILAYAS.map((w) => (
               <option key={w.id} value={w.id}>
                 {w.code} - {locale === "ar" ? w.name_ar : w.name_fr}

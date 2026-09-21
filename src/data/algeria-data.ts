@@ -1,5 +1,5 @@
 // ==============================================================================
-// HIDHAB KAIZEN (هضاب كايزن) - ALGERIA 58 WILAYAS & COMMUNES DATASET
+// HIDHAB KAIZEN (هضاب كايزن) - ALGERIA 69 WILAYAS & COMMUNES DATASET
 // Official Administrative Divisions & Default Delivery Rates
 // ==============================================================================
 
@@ -62,7 +62,7 @@ export const ALGERIA_WILAYAS: Wilaya[] = [
     default_office_delivery: 550,
     communes: [
       { id: 301, name_ar: "الأغواط", name_fr: "Laghouat", postal_code: "03000" },
-      { id: 302, name_ar: "أفلو", name_fr: "Aflou", postal_code: "03100" },
+      { id: 302, name_ar: "حاسي الرمل", name_fr: "Hassi R'Mel", postal_code: "03100" },
       { id: 303, name_ar: "قصر الحيران", name_fr: "Ksar El Hirane", postal_code: "03200" },
       { id: 304, name_ar: "عين ماضي", name_fr: "Aïn Madhi", postal_code: "03300" },
       { id: 305, name_ar: "سيدي مخلوف", name_fr: "Sidi Makhlouf", postal_code: "03400" },
@@ -92,7 +92,7 @@ export const ALGERIA_WILAYAS: Wilaya[] = [
     default_office_delivery: 400,
     communes: [
       { id: 501, name_ar: "باتنة", name_fr: "Batna", postal_code: "05000" },
-      { id: 502, name_ar: "بريكة", name_fr: "Barika", postal_code: "05500" },
+      { id: 502, name_ar: "تازولت", name_fr: "Tazoult", postal_code: "05200" },
       { id: 503, name_ar: "عين التوتة", name_fr: "Aïn Touta", postal_code: "05200" },
       { id: 504, name_ar: "مروانة", name_fr: "Merouana", postal_code: "05300" },
       { id: 505, name_ar: "آريس", name_fr: "Arris", postal_code: "05400" },
@@ -127,7 +127,7 @@ export const ALGERIA_WILAYAS: Wilaya[] = [
       { id: 702, name_ar: "طولقة", name_fr: "Tolga", postal_code: "07100" },
       { id: 703, name_ar: "سيدي عقبة", name_fr: "Sidi Okba", postal_code: "07200" },
       { id: 704, name_ar: "الزيبان", name_fr: "Zebana", postal_code: "07300" },
-      { id: 705, name_ar: "القنطرة", name_fr: "El Kantara", postal_code: "07400" },
+      { id: 705, name_ar: "سيدي عقبة", name_fr: "Sidi Okba", postal_code: "07400" },
     ],
   },
   {
@@ -199,7 +199,7 @@ export const ALGERIA_WILAYAS: Wilaya[] = [
     default_office_delivery: 450,
     communes: [
       { id: 1201, name_ar: "تبسة", name_fr: "Tébessa", postal_code: "12000" },
-      { id: 1202, name_ar: "بئر العاتر", name_fr: "Bir El Ater", postal_code: "12200" },
+      { id: 1202, name_ar: "الونزة", name_fr: "Ouenza", postal_code: "12200" },
       { id: 1203, name_ar: "الشريعة", name_fr: "Cheria", postal_code: "12100" },
       { id: 1204, name_ar: "العوينات", name_fr: "Ouenza", postal_code: "12300" },
     ],
@@ -231,7 +231,7 @@ export const ALGERIA_WILAYAS: Wilaya[] = [
       { id: 1401, name_ar: "تيارت", name_fr: "Tiaret", postal_code: "14000" },
       { id: 1402, name_ar: "فرندة", name_fr: "Frenda", postal_code: "14100" },
       { id: 1403, name_ar: "السوقر", name_fr: "Sougueur", postal_code: "14200" },
-      { id: 1404, name_ar: "قصر الشلالة", name_fr: "Ksar Chellala", postal_code: "14300" },
+      { id: 1404, name_ar: "فرندة", name_fr: "Frenda", postal_code: "14300" },
       { id: 1405, name_ar: "مهدية", name_fr: "Mahdia", postal_code: "14400" },
     ],
   },
@@ -285,7 +285,7 @@ export const ALGERIA_WILAYAS: Wilaya[] = [
     default_office_delivery: 500,
     communes: [
       { id: 1701, name_ar: "الجلفة", name_fr: "Djelfa", postal_code: "17000" },
-      { id: 1702, name_ar: "مسعد", name_fr: "Messaad", postal_code: "17100" },
+      { id: 1702, name_ar: "حاسي بحبح", name_fr: "Hassi Bahbah", postal_code: "17100" },
       { id: 1703, name_ar: "عين وسارة", name_fr: "Aïn Oussara", postal_code: "17200" },
       { id: 1704, name_ar: "حاسي بحبح", name_fr: "Hassi Bahbah", postal_code: "17300" },
       { id: 1705, name_ar: "الشارف", name_fr: "Charef", postal_code: "17400" },
@@ -426,7 +426,7 @@ export const ALGERIA_WILAYAS: Wilaya[] = [
     communes: [
       { id: 2601, name_ar: "المدية", name_fr: "Médéa", postal_code: "26000" },
       { id: 2602, name_ar: "البرواقية", name_fr: "Berrouaghia", postal_code: "26200" },
-      { id: 2603, name_ar: "قصر البخاري", name_fr: "Ksar El Boukhari", postal_code: "26300" },
+      { id: 2603, name_ar: "البرواقية", name_fr: "Berrouaghia", postal_code: "26300" },
       { id: 2604, name_ar: "تابلاط", name_fr: "Tablat", postal_code: "26100" },
       { id: 2605, name_ar: "بني سليمان", name_fr: "Beni Slimane", postal_code: "26400" },
     ],
@@ -455,7 +455,7 @@ export const ALGERIA_WILAYAS: Wilaya[] = [
     default_office_delivery: 450,
     communes: [
       { id: 2801, name_ar: "المسيلة", name_fr: "M'Sila", postal_code: "28000" },
-      { id: 2802, name_ar: "بوسعادة", name_fr: "Bou Saâda", postal_code: "28100" },
+      { id: 2802, name_ar: "مقرة", name_fr: "Magra", postal_code: "28100" },
       { id: 2803, name_ar: "سيدي عيسى", name_fr: "Sidi Aïssa", postal_code: "28200" },
       { id: 2804, name_ar: "مقرة", name_fr: "Magra", postal_code: "28300" },
       { id: 2805, name_ar: "حمام الضلعة", name_fr: "Hammam Dalaa", postal_code: "28400" },
@@ -518,7 +518,7 @@ export const ALGERIA_WILAYAS: Wilaya[] = [
     communes: [
       { id: 3201, name_ar: "البيض", name_fr: "El Bayadh", postal_code: "32000" },
       { id: 3202, name_ar: "بوقطب", name_fr: "Bougtob", postal_code: "32100" },
-      { id: 3203, name_ar: "الأبيض سيدي الشيخ", name_fr: "El Abiodh Sidi Cheikh", postal_code: "32200" },
+      { id: 3203, name_ar: "بريزينة", name_fr: "Brezina", postal_code: "32200" },
       { id: 3204, name_ar: "بريزينة", name_fr: "Brezina", postal_code: "32300" },
     ],
   },
@@ -885,6 +885,151 @@ export const ALGERIA_WILAYAS: Wilaya[] = [
       { id: 5801, name_ar: "المنيعة", name_fr: "El Meniaa", postal_code: "58000" },
       { id: 5802, name_ar: "حاسي الفحل", name_fr: "Hassi Gara", postal_code: "58100" },
       { id: 5803, name_ar: "حاسي القارة", name_fr: "Hassi Fehal", postal_code: "58200" },
+    ],
+  },
+  {
+    id: 59,
+    code: "59",
+    name_ar: "أفلو",
+    name_fr: "Aflou",
+    default_home_delivery: 800,
+    default_office_delivery: 550,
+    communes: [
+      { id: 5901, name_ar: "أفلو", name_fr: "Aflou", postal_code: "59000" },
+      { id: 5902, name_ar: "سبقاق", name_fr: "Sebgag", postal_code: "59100" },
+      { id: 5903, name_ar: "سيدي بوزيد", name_fr: "Sidi Bouzid", postal_code: "59200" },
+    ],
+  },
+  {
+    id: 60,
+    code: "60",
+    name_ar: "بريكة",
+    name_fr: "Barika",
+    default_home_delivery: 600,
+    default_office_delivery: 400,
+    communes: [
+      { id: 6001, name_ar: "بريكة", name_fr: "Barika", postal_code: "60000" },
+      { id: 6002, name_ar: "إمدوكال", name_fr: "M'doukal", postal_code: "60100" },
+      { id: 6003, name_ar: "بيطام", name_fr: "Bitam", postal_code: "60200" },
+    ],
+  },
+  {
+    id: 61,
+    code: "61",
+    name_ar: "القنطرة",
+    name_fr: "El Kantara",
+    default_home_delivery: 700,
+    default_office_delivery: 500,
+    communes: [
+      { id: 6101, name_ar: "القنطرة", name_fr: "El Kantara", postal_code: "61000" },
+      { id: 6102, name_ar: "عين زعطوط", name_fr: "Aïn Zaatout", postal_code: "61100" },
+    ],
+  },
+  {
+    id: 62,
+    code: "62",
+    name_ar: "بئر العاتر",
+    name_fr: "Bir El Ater",
+    default_home_delivery: 700,
+    default_office_delivery: 500,
+    communes: [
+      { id: 6201, name_ar: "بئر العاتر", name_fr: "Bir El Ater", postal_code: "62000" },
+      { id: 6202, name_ar: "العقلة", name_fr: "El Ogla", postal_code: "62100" },
+      { id: 6203, name_ar: "أم علي", name_fr: "Oum Ali", postal_code: "62200" },
+    ],
+  },
+  {
+    id: 63,
+    code: "63",
+    name_ar: "العريشة",
+    name_fr: "El Aricha",
+    default_home_delivery: 650,
+    default_office_delivery: 450,
+    communes: [
+      { id: 6301, name_ar: "العريشة", name_fr: "El Aricha", postal_code: "63000" },
+      { id: 6302, name_ar: "البويهي", name_fr: "El Bouihi", postal_code: "63100" },
+      { id: 6303, name_ar: "سيدي الجيلالي", name_fr: "Sidi Djillali", postal_code: "63200" },
+    ],
+  },
+  {
+    id: 64,
+    code: "64",
+    name_ar: "قصر الشلالة",
+    name_fr: "Ksar Chellala",
+    default_home_delivery: 650,
+    default_office_delivery: 450,
+    communes: [
+      { id: 6401, name_ar: "قصر الشلالة", name_fr: "Ksar Chellala", postal_code: "64000" },
+      { id: 6402, name_ar: "سرغين", name_fr: "Serghine", postal_code: "64100" },
+      { id: 6403, name_ar: "زمالة الأمير عبد القادر", name_fr: "Zmalet El Emir Abdelkader", postal_code: "64200" },
+    ],
+  },
+  {
+    id: 65,
+    code: "65",
+    name_ar: "عين وسارة",
+    name_fr: "Aïn Ouessara",
+    default_home_delivery: 650,
+    default_office_delivery: 450,
+    communes: [
+      { id: 6501, name_ar: "عين وسارة", name_fr: "Aïn Ouessara", postal_code: "65000" },
+      { id: 6502, name_ar: "قرنيني", name_fr: "Guernini", postal_code: "65100" },
+      { id: 6503, name_ar: "بيرين", name_fr: "Birine", postal_code: "65200" },
+    ],
+  },
+  {
+    id: 66,
+    code: "66",
+    name_ar: "مسعد",
+    name_fr: "Messaad",
+    default_home_delivery: 700,
+    default_office_delivery: 500,
+    communes: [
+      { id: 6601, name_ar: "مسعد", name_fr: "Messaad", postal_code: "66000" },
+      { id: 6602, name_ar: "دلدول", name_fr: "Deldoul", postal_code: "66100" },
+      { id: 6603, name_ar: "سلمانة", name_fr: "Selmana", postal_code: "66200" },
+      { id: 6604, name_ar: "سد رحال", name_fr: "Sed Rahal", postal_code: "66300" },
+    ],
+  },
+  {
+    id: 67,
+    code: "67",
+    name_ar: "قصر البخاري",
+    name_fr: "Ksar El Boukhari",
+    default_home_delivery: 600,
+    default_office_delivery: 400,
+    communes: [
+      { id: 6701, name_ar: "قصر البخاري", name_fr: "Ksar El Boukhari", postal_code: "67000" },
+      { id: 6702, name_ar: "سانق", name_fr: "Saneg", postal_code: "67100" },
+      { id: 6703, name_ar: "مفاتحة", name_fr: "M'fatha", postal_code: "67200" },
+    ],
+  },
+  {
+    id: 68,
+    code: "68",
+    name_ar: "بوسعادة",
+    name_fr: "Bou Saâda",
+    default_home_delivery: 650,
+    default_office_delivery: 450,
+    communes: [
+      { id: 6801, name_ar: "بوسعادة", name_fr: "Bou Saâda", postal_code: "68000" },
+      { id: 6802, name_ar: "الهامل", name_fr: "El Hamel", postal_code: "68100" },
+      { id: 6803, name_ar: "أولتم", name_fr: "Oulteme", postal_code: "68200" },
+      { id: 6804, name_ar: "بن سرور", name_fr: "Ben Srour", postal_code: "68300" },
+    ],
+  },
+  {
+    id: 69,
+    code: "69",
+    name_ar: "الأبيض سيدي الشيخ",
+    name_fr: "El Abiodh Sidi Cheikh",
+    default_home_delivery: 800,
+    default_office_delivery: 600,
+    communes: [
+      { id: 6901, name_ar: "الأبيض سيدي الشيخ", name_fr: "El Abiodh Sidi Cheikh", postal_code: "69000" },
+      { id: 6902, name_ar: "عين العراك", name_fr: "Aïn El Orak", postal_code: "69100" },
+      { id: 6903, name_ar: "البنود", name_fr: "El Bnoud", postal_code: "69200" },
+      { id: 6904, name_ar: "أربوات", name_fr: "Arbaouat", postal_code: "69300" },
     ],
   },
 ];

@@ -51,7 +51,7 @@ export default function DeliveryPricingPage() {
   };
 
   const handleBulkApply = async (category: "all" | "south" | "north") => {
-    const southernWilayaIds = [1, 3, 7, 8, 11, 30, 32, 33, 37, 39, 45, 47, 49, 50, 52, 53, 54, 55, 56, 57, 58];
+    const southernWilayaIds = [1, 3, 7, 8, 11, 30, 32, 33, 37, 39, 45, 47, 49, 50, 52, 53, 54, 55, 56, 57, 58, 59, 61, 62, 66, 69];
     
     let targetIds: number[] = [];
     if (category === "all") {
@@ -86,7 +86,7 @@ export default function DeliveryPricingPage() {
   if (loading) {
     return (
       <div className="py-20 text-center text-sm font-bold">
-        جاري تحميل أسعار التوصيل للـ 58 ولاية...
+        جاري تحميل أسعار التوصيل للـ 69 ولاية...
       </div>
     );
   }
@@ -98,7 +98,7 @@ export default function DeliveryPricingPage() {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl sm:text-3xl font-black text-navy-950 tracking-tight">
-            {locale === "ar" ? "إدارة أسعار التوصيل (58 ولاية)" : "Tarifs de Livraison (58 Wilayas)"}
+            {locale === "ar" ? "إدارة أسعار التوصيل (69 ولاية)" : "Tarifs de Livraison (69 Wilayas)"}
           </h1>
           <p className="text-xs sm:text-sm text-charcoal-600 mt-1">
             {locale === "ar"
@@ -132,11 +132,11 @@ export default function DeliveryPricingPage() {
           />
         </div>
         <span className="text-xs font-bold text-charcoal-500 whitespace-nowrap">
-          {filteredList.length} / 58 {locale === "ar" ? "ولاية" : "wilayas"}
+          {filteredList.length} / 69 {locale === "ar" ? "ولاية" : "wilayas"}
         </span>
       </div>
 
-      {/* 58 WILAYAS PRICING TABLE */}
+      {/* 69 WILAYAS PRICING TABLE */}
       <div className="bg-white rounded-3xl border border-sand-200 shadow-sm overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-start text-xs">
@@ -286,7 +286,7 @@ export default function DeliveryPricingPage() {
                   onClick={() => handleBulkApply("all")}
                   className="w-full py-2.5 px-4 rounded-xl bg-navy-950 hover:bg-navy-900 text-white font-bold text-xs transition-all text-center"
                 >
-                  {locale === "ar" ? "تطبيق على جميع الـ 58 ولاية" : "Appliquer aux 58 wilayas"}
+                  {locale === "ar" ? "تطبيق على جميع الـ 69 ولاية" : "Appliquer aux 69 wilayas"}
                 </button>
               </div>
             </div>

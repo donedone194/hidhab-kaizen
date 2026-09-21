@@ -93,7 +93,7 @@ export default function AdminDashboardPage() {
           </h1>
           <p className="text-xs sm:text-sm text-charcoal-600 mt-1">
             {locale === "ar"
-              ? "نظرة شاملة على المبيعات، الطلبيات، وإحصائيات التوصيل لكافة الـ 58 ولاية."
+              ? "نظرة شاملة على المبيعات، الطلبيات، وإحصائيات التوصيل لكافة الـ 69 ولاية."
               : "Aperçu en temps réel de vos ventes, livraisons et flux COD."}
           </p>
         </div>
@@ -105,7 +105,7 @@ export default function AdminDashboardPage() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-sand-300 hover:border-orange-500 text-xs font-bold text-navy-950 shadow-sm transition-colors"
           >
             <Truck className="w-4 h-4 text-orange-500" />
-            <span>{locale === "ar" ? "تعديل أسعار الـ 58 ولاية" : "Tarifs 58 Wilayas"}</span>
+            <span>{locale === "ar" ? "تعديل أسعار الـ 69 ولاية" : "Tarifs 69 Wilayas"}</span>
           </Link>
           <Link
             href="/admin/orders"

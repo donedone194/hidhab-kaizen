@@ -60,14 +60,26 @@ export default function ContactPage() {
               
               <div className="space-y-2.5 pt-2">
                 <a
-                  href="tel:+213675667808"
+                  href="tel:+213541911594"
                   className="flex items-center justify-between p-4 rounded-2xl bg-sand-50 hover:bg-orange-50/70 border border-sand-200 hover:border-orange-500/40 transition-all group"
                 >
                   <span className="font-bold text-navy-950 group-hover:text-orange-600 text-sm">
                     {locale === "ar" ? "الخط 1 (واتساب ومكالمات)" : "Ligne 1 (WhatsApp & Appels)"}
                   </span>
                   <span className="font-mono text-sm font-black text-orange-600" dir="ltr">
-                    0675 66 78 08
+                    0541 91 15 94
+                  </span>
+                </a>
+
+                <a
+                  href="tel:+213661873313"
+                  className="flex items-center justify-between p-4 rounded-2xl bg-sand-50 hover:bg-orange-50/70 border border-sand-200 hover:border-orange-500/40 transition-all group"
+                >
+                  <span className="font-bold text-navy-950 group-hover:text-orange-600 text-sm">
+                    {locale === "ar" ? "الخط 2 (مكالمات مباشرة)" : "Ligne 2 (Appels directs)"}
+                  </span>
+                  <span className="font-mono text-sm font-black text-orange-600" dir="ltr">
+                    0661 87 33 13
                   </span>
                 </a>
 
@@ -76,7 +88,7 @@ export default function ContactPage() {
                   className="flex items-center justify-between p-4 rounded-2xl bg-sand-50 hover:bg-orange-50/70 border border-sand-200 hover:border-orange-500/40 transition-all group"
                 >
                   <span className="font-bold text-navy-950 group-hover:text-orange-600 text-sm">
-                    {locale === "ar" ? "الخط 2 (مكالمات مباشرة)" : "Ligne 2 (Appels directs)"}
+                    {locale === "ar" ? "الخط 3 (مكالمات مباشرة)" : "Ligne 3 (Appels directs)"}
                   </span>
                   <span className="font-mono text-sm font-black text-orange-600" dir="ltr">
                     0657 57 38 48
@@ -103,7 +115,7 @@ export default function ContactPage() {
 
               <div className="space-y-3 pt-2">
                 <a
-                  href="https://wa.me/213675667808"
+                  href="https://wa.me/213541911594"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-3 p-4 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm shadow-lg shadow-emerald-500/25 transition-all"
@@ -112,7 +124,7 @@ export default function ContactPage() {
                   <span>{locale === "ar" ? "مراسلة عبر واتساب الآن" : "Discuter sur WhatsApp"}</span>
                 </a>
                 <p className="text-[11px] text-center text-charcoal-400 font-mono" dir="ltr">
-                  +213 675 66 78 08
+                  +213 541 91 15 94
                 </p>
               </div>
             </div>

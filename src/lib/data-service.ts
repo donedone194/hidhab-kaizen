@@ -511,7 +511,7 @@ export async function deleteProduct(id: string): Promise<boolean> {
 }
 
 // ------------------------------------------------------------------------------
-// DELIVERY PRICING SERVICE (58 WILAYAS)
+// DELIVERY PRICING SERVICE (69 WILAYAS)
 // ------------------------------------------------------------------------------
 export async function getDeliveryPricing(): Promise<WilayaDeliveryPrice[]> {
   const defaultPricing: WilayaDeliveryPrice[] = ALGERIA_WILAYAS.map((w) => ({

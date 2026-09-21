@@ -285,7 +285,7 @@ export default function OrderForm({ product }: OrderFormProps) {
           </div>
         </div>
 
-        {/* FIELD 4: الولاية (Wilaya - 58 Algerian Wilayas) */}
+        {/* FIELD 4: الولاية (Wilaya - 69 Algerian Wilayas) */}
         <div>
           <label htmlFor={`${formId}-wilaya`} className="block text-sm font-bold text-navy-950 mb-2">
             4. {t.orderForm.wilaya} <span className="text-orange-500">*</span>

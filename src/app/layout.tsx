@@ -34,15 +34,15 @@ export const metadata: Metadata = {
     template: "%s | Hidhab Kaizen",
   },
   description:
-    "متجر هضاب كايزن الإلكتروني - منتجات أصلية مختارة بعناية مع خدمة التوصيل السريع لـ 58 ولاية جزائرية والدفع كاش عند استلام الطرد ومعاينته. Boutique en ligne algérienne avec paiement à la livraison sur 58 wilayas.",
+    "متجر هضاب كايزن الإلكتروني - منتجات أصلية مختارة بعناية مع خدمة التوصيل السريع لـ 69 ولاية جزائرية والدفع كاش عند استلام الطرد ومعاينته. Boutique en ligne algérienne avec paiement à la livraison sur 69 wilayas.",
   keywords: [
     "Hidhab Kaizen",
     "هضاب كايزن",
     "تسوق إلكتروني الجزائر",
     "الدفع عند الاستلام الجزائر",
-    "توصيل 58 ولاية",
+    "توصيل 69 ولاية",
     "achat en ligne algerie",
-    "livraison 58 wilayas",
+    "livraison 69 wilayas",
     "paiement a la livraison algerie",
     "e-commerce dz",
     "yalidine express",
@@ -65,9 +65,9 @@ export const metadata: Metadata = {
     locale: "ar_DZ",
     alternateLocale: ["fr_DZ"],
     url: siteUrl,
-    title: "Hidhab Kaizen | هضاب كايزن - تسوق إلكتروني وتوصيل لـ 58 ولاية",
+    title: "Hidhab Kaizen | هضاب كايزن - تسوق إلكتروني وتوصيل لـ 69 ولاية",
     description:
-      "متجر هضاب كايزن الإلكتروني في الجزائر. توصيل سريع وموثوق لجميع الولايات 58 والدفع نقداً عند الاستلام.",
+      "متجر هضاب كايزن الإلكتروني في الجزائر. توصيل سريع وموثوق لجميع الولايات 69 والدفع نقداً عند الاستلام.",
     siteName: "Hidhab Kaizen",
     images: [
       {
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Hidhab Kaizen | هضاب كايزن",
-    description: "متجر هضاب كايزن الإلكتروني الجزائري - توصيل 58 ولاية ودفع عند الاستلام.",
+    description: "متجر هضاب كايزن الإلكتروني الجزائري - توصيل 69 ولاية ودفع عند الاستلام.",
   },
   robots: {
     index: true,
@@ -106,10 +106,10 @@ const jsonLd = {
   url: siteUrl,
   logo: `${siteUrl}/logo.png`,
   description:
-    "متجر هضاب كايزن الإلكتروني - تسوق إلكتروني مع خدمة الدفع عند الاستلام والتوصيل إلى 58 ولاية جزائرية",
+    "متجر هضاب كايزن الإلكتروني - تسوق إلكتروني مع خدمة الدفع عند الاستلام والتوصيل إلى 69 ولاية جزائرية",
   currenciesAccepted: "DZD",
   paymentAccepted: "Cash on Delivery, الدفع عند الاستلام",
-  telephone: "+213675667808",
+  telephone: "+213541911594",
   priceRange: "DZD",
   address: {
     "@type": "PostalAddress",

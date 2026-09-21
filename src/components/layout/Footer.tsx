@@ -20,7 +20,7 @@ export default function Footer() {
               </div>
               <div>
                 <h4 className="font-bold text-white text-base">
-                  {locale === "ar" ? "توصيل سريع لـ 58 ولاية" : "Livraison Express 58 Wilayas"}
+                  {locale === "ar" ? "توصيل سريع لـ 69 ولاية" : "Livraison Express 69 Wilayas"}
                 </h4>
                 <p className="text-xs text-sand-300 mt-0.5">
                   {locale === "ar" ? "إلى باب منزلك أو عبر مكاتب التوصيل" : "À domicile ou en point relais"}
@@ -158,8 +158,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-orange-400 shrink-0" />
-                <a href="tel:+213675667808" className="hover:text-orange-400 font-mono" dir="ltr">
-                  0675 66 78 08
+                <a href="tel:+213541911594" className="hover:text-orange-400 font-mono" dir="ltr">
+                  0541 91 15 94
+                </a>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Phone className="w-4 h-4 text-sand-400 shrink-0" />
+                <a href="tel:+213661873313" className="hover:text-orange-400 font-mono" dir="ltr">
+                  0661 87 33 13
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
