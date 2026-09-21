@@ -1,0 +1,16 @@
+name: Supabase Keep Alive
+
+on:
+  schedule:
+    # Runs at 00:00 UTC every 3 days to prevent Supabase 7-day auto-pause
+    - cron: "0 0 */3 * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase API to keep database active
+        run: |
+          curl -s -o /dev/null -w "%{http_code}" https://ayaihdxudfqaoqomykko.supabase.co/auth/v1/health || true
+

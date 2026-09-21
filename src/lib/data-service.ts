@@ -524,7 +524,21 @@ export async function getDeliveryPricing(): Promise<WilayaDeliveryPrice[]> {
   if (isSupabaseConfigured && supabase) {
     try {
       const { data, error } = await supabase.from("delivery_pricing").select("*");
-      if (!error && data && data.length > 0) return data;
+      if (!error && data && data.length > 0) {
+        // Merge Supabase prices with complete ALGERIA_WILAYAS dataset so all 69 wilayas are guaranteed
+        const merged: WilayaDeliveryPrice[] = ALGERIA_WILAYAS.map((w) => {
+          const dbItem = data.find((d) => d.wilaya_id === w.id);
+          return (
+            dbItem || {
+              wilaya_id: w.id,
+              home_delivery_price: w.default_home_delivery,
+              office_delivery_price: w.default_office_delivery,
+              is_active: true,
+            }
+          );
+        });
+        return merged;
+      }
     } catch {
       // Fallback
     }
